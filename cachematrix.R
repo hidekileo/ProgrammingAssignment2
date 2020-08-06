@@ -1,4 +1,5 @@
 ## first function : MakeCacheMatrix ()
+##This first function creates a specific object of a matrix
 MakeCacheMatrix <- function(x = matrix()){
         m <- NULL
         set <- function(y) {
@@ -12,6 +13,7 @@ MakeCacheMatrix <- function(x = matrix()){
 }
 
 ##Second function : CacheSolve ()
+##This function get the inverse of the cache data
 CacheSolve <- function(x, ...) {
         m <- x$getinv()
         if(!is.null(m)) {
